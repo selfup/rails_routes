@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body {
+   background-color: black;
+   padding-top: 53px;
+ }
+
+ .jumbotron {
+   background-color: black;
+   color: black;
+   text-align: center;
+   /*background-image: url("/images/background.jpg");*/
+   height: 100vh;
+   background-size: cover !important;
+   background-repeat: no-repeat;
+   position: relative;
+   background-position: center;
+ }
+
+ .a {
+   text-align: center;
+ }
+
+ .jumbotron a {
+     align-items: center;
+     border-radius: 25px;
+     border-color: #90C3D4;
+     border-bottom-width: medium;
+     border-width: medium;
+ }
+
+ @media (max-width: 1081px) {
+   .jumbotron {
+     text-align: center;
+     position: relative;
+     height: 100vh;
+     /*background-image: url("/images/background2.jpg");*/
+     background-repeat: no-repeat;
+     background-attachment: fixed !important;
+     background-position: center;
+     background-size: cover !important;
+     color: black;
+   }
+
+   .jumbotron li {
+       margin-left: -36px;
+       align-items: center;
+       border-radius: 25px;
+       border-color: black;
+       border-bottom-width: medium;
+       border-width: medium;
+   }
+
+ }
